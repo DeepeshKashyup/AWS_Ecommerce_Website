@@ -1,0 +1,722 @@
+/* 1 */
+{
+    "_id" : ObjectId("58f500382f1f9e448473ecb0"),
+    "Item model number" : "MG562LL/A-RB",
+    "ASIN" : "B00YD545CC",
+    "Shipping Weight" : "9.1 ounces (",
+    "Customer Reviews" : "3.4 out of 5 stars",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 6 Gold 16GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 1 Year Limited Warranty. PLEASE NOTE: Charge phone overnight before using for the first time to ensure full battery capability. In the event that the phone does not turn on initially - press and hold down the 'Power' and 'Home' buttons simultaneously until the Apple logo appears on the screen.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 0.3 x 2.6 inches",
+    "Date First Available" : "June 8, 2015",
+    "Item Weight" : "4.5 ounces",
+    "Product Price" : [ 
+        "$282.83"
+    ],
+    "Manufacturer" : "Apple"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("58f500712f1f9e448473ecb1"),
+    "Item model number" : "A1660",
+    "ASIN" : "B01M1EXQY4",
+    "Shipping Weight" : "8.8 ounces (",
+    "Product Description" : "The latest iPhone with advanced camera, better battery life, immersive speakers and water resistance!",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 2.6 x 0.3 inches",
+    "Item Weight" : "4.8 ounces",
+    "Product Price" : [ 
+        "$814.99"
+    ],
+    "Customer Reviews" : "4.1 out of 5 stars"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("58f5009e2f1f9e448473ecb2"),
+    "Item model number" : "MF132LL/A-RB",
+    "ASIN" : "B00YD53ST8",
+    "Shipping Weight" : "8.8 ounces (",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 5C Green 32GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 1 Year Limited Warranty.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.9 x 0.4 x 2.3 inches",
+    "Item Weight" : "4 ounces",
+    "Product Price" : [ 
+        "$169.99"
+    ],
+    "Customer Reviews" : "3.5 out of 5 stars"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("58f500a42f1f9e448473ecb3"),
+    "Item model number" : "MG552LL/A-RB",
+    "ASIN" : "B00YD546IA",
+    "Shipping Weight" : "7.2 ounces (",
+    "Customer Reviews" : "3.4 out of 5 stars",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 6 Gold 64GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 90 days Limited Warranty. PLEASE NOTE: Charge phone overnight before using for the first time to ensure full battery capability. In the event that the phone does not turn on initially - press and hold down the 'Power' and 'Home' buttons simultaneously until the Apple logo appears on the screen.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 0.3 x 2.6 inches",
+    "Date First Available" : "June 8, 2015",
+    "Item Weight" : "4.5 ounces",
+    "Product Price" : [ 
+        "$279.79"
+    ],
+    "Manufacturer" : "Apple"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("58f500bc2f1f9e448473ecb4"),
+    "Item model number" : "iPhone 4S",
+    "ASIN" : "B00ZBADZBU",
+    "Shipping Weight" : "9 ounces (",
+    "Product Description" : "The iPhone 4S is the follow-up to the very popular iPhone 4 and features a faster Apple A5 dual-core processor and better 8 megapixel camera. The iPhone 4S also features Siri - a new voice assistant heeding natural-language questions and commands, and taking dictation. Other features of this smartphone include a gorgeous 3.5-inch high-resolution display, full web browser, Bluetooth compatibility, music player, Wi-Fi, and 16GB of of internal memory. The iPhone 4S also comes equipped with GSM, CDMA, and WCDMA modes for international use.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.2 x 0.3 x 2.2 inches",
+    "Item Weight" : "1 pounds",
+    "Product Price" : [ 
+        "$89.99"
+    ],
+    "Customer Reviews" : "3.2 out of 5 stars"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("58f500cd2f1f9e448473ecb5"),
+    "Item model number" : "L6LMF002-CS-R",
+    "ASIN" : "B010S9N6OO",
+    "International Shipping" : "This item can be shipped to select countries outside of the U.S.",
+    "Shipping Weight" : "2.1 ounces (",
+    "Product Description" : "",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "72 x 0.3 x 0.2 inches",
+    "Item Weight" : "1.4 ounces",
+    "Domestic Shipping" : "Currently, item can be shipped only within the U.S. and to APO/FPO addresses. For APO/FPO shipments, please check with the manufacturer regarding warranty and support issues.",
+    "Product Price" : [ 
+        "$7.99"
+    ],
+    "Customer Reviews" : "4.2 out of 5 stars"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("58f500d22f1f9e448473ecb6"),
+    "Item model number" : "MG5C2LL/A-RB",
+    "ASIN" : "B00YD549VE",
+    "Shipping Weight" : "9.6 ounces (",
+    "Customer Reviews" : "3.4 out of 5 stars",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 6 Gold 64GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 90 days Limited Warranty. PLEASE NOTE: Charge phone overnight before using for the first time to ensure full battery capability. In the event that the phone does not turn on initially - press and hold down the 'Power' and 'Home' buttons simultaneously until the Apple logo appears on the screen.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 0.3 x 2.6 inches",
+    "Date First Available" : "June 8, 2015",
+    "Item Weight" : "4.5 ounces",
+    "Product Price" : [ 
+        "$310.06"
+    ],
+    "Manufacturer" : "Apple Computer"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("58f500dc2f1f9e448473ecb7"),
+    "Item model number" : "IPSE64GB",
+    "ASIN" : "B01L1BOQSS",
+    "Shipping Weight" : "12 ounces",
+    "Product Description" : "Welcome to iPhone SE, the most powerful 4?inch phone ever. To create it, we started with a beloved design, then reinvented it from the inside out. The A9 is the same advanced chip used in iPhone 6s. The 12?megapixel camera captures incredible photos and 4K videos. And Live Photos bring your images to life. The result is an iPhone that looks small. But lives large.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "8 x 5 x 3 inches",
+    "Item Weight" : "8 ounces",
+    "Product Price" : [],
+    "Customer Reviews" : "4.3 out of 5 stars"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("58f500e02f1f9e448473ecb8"),
+    "Item model number" : "MGCP2LL/A-RB",
+    "ASIN" : "B00YD53JRO",
+    "Shipping Weight" : "9.1 ounces (",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 5C White 8GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 1 Year Limited Warranty.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.9 x 0.3 x 2.3 inches",
+    "Item Weight" : "4.6 ounces",
+    "Product Price" : [ 
+        "$159.94"
+    ],
+    "Customer Reviews" : "3.8 out of 5 stars"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("58f500ee2f1f9e448473ecb9"),
+    "Item model number" : "77-54045",
+    "ASIN" : "B01K6PBNEU",
+    "Shipping Weight" : "6.4 ounces (",
+    "Product Description" : "You don’t have time to precision pack your briefcase. So, pack along the sleep, slim Commuter Series case — easily fits any crevice in your bag. Featuring a tough two-layer construction, Commuter Series helps keep your phone safe from drops, bumps and life on the go. Plus port plugs stop dust from entering jacks and inputs, so your phone stays clean.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "6.5 x 3.4 x 0.5 inches",
+    "Item Weight" : "1.8 ounces",
+    "Product Price" : [ 
+        "$17.99"
+    ],
+    "Customer Reviews" : "4.5 out of 5 stars"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("58f500f12f1f9e448473ecba"),
+    "Item model number" : "A1533",
+    "ASIN" : "B00YD5400Y",
+    "Shipping Weight" : "6.4 ounces (",
+    "Product Description" : "This Certified Refurbished product is tested and certified to look and work like new, with limited to no wear. The refurbishing process includes functionality testing, inspection, and repackaging. The product is backed by a minimum 90-day warranty, and may arrive in a generic box. The product ships with a charger and cable, but does not include headphone, manual or SIM card. Only select sellers who maintain a high performance bar may offer Certified Refurbished products on Amazon.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.9 x 0.3 x 2.3 inches",
+    "Item Weight" : "4 ounces",
+    "Batteries" : "1 Lithium ion batteries required.",
+    "Product Price" : [ 
+        "$169.99"
+    ],
+    "Customer Reviews" : "3.6 out of 5 stars"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("58f500f42f1f9e448473ecbb"),
+    "Item model number" : "MD827LL/A",
+    "ASIN" : "B0097BEG1C",
+    "Shipping Weight" : "1.6 ounces",
+    "Product Description" : "Unlike traditional, circular earbuds, the design of the new apple ear pods is defined by the geometry of the ear. Which makes them more comfortable for more people than any other earbud-style headphone. The speakers inside apple ear pods have been engineered to minimize sound loss and maximize sound output. So you get high-quality audio that's just as impressive as what you'd hear from more expensive headphones. The apple ear pods with remote and mic also include a built-in remote that lets you adjust the volume, control the playback of music and video, and answer or end calls with a pinch of the cord. Compatibility information the remote and mic are supported by all models of iPod, iPhone, and iPad (not all models support volume up/down functions). Audio is supported by all iPod models. Requires software version 1.0.3 For iPod Nano (4th generation), 2.0.1 For iPod classic (120gb), and 2.2 Or later for iPod touch (2nd generation).",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.5 x 4.5 x 3.3 inches",
+    "Item Weight" : "0.3 ounces",
+    "Product Price" : [],
+    "Customer Reviews" : "3.2 out of 5 stars"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("58f500fa2f1f9e448473ecbc"),
+    "Item model number" : "LYSB06WD59MLV-ELECTRNCS",
+    "ASIN" : "B06WD59MLV",
+    "Shipping Weight" : "6.4 ounces (",
+    "Product Description" : "\"",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "0.8 x 3.6 x 7.2 inches",
+    "Item Weight" : "6.4 ounces",
+    "Product Price" : [],
+    "Customer Reviews" : "3.9 out of 5 stars"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("58f5010e2f1f9e448473ecbd"),
+    "Item model number" : "ZW_A_6763",
+    "ASIN" : "B00YTZSQGW",
+    "Shipping Weight" : "0.3 ounces (",
+    "Product Description" : "Pack Includes: 2* Glass Screen Protector, 4*Guide Stickers, 2* Wet Wipes&2*Dry Wipes, 2* Dust Absorbers",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "7.1 x 4.3 x 0.6 inches",
+    "Item Weight" : "0.3 ounces",
+    "Product Price" : [],
+    "Customer Reviews" : "4.0 out of 5 stars"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("58f5013c2f1f9e448473ecbe"),
+    "Item model number" : "MGAX2LL/A-RB",
+    "ASIN" : "B00YD54J8W",
+    "Shipping Weight" : "9.1 ounces (",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 6 Plus Space Gray 16GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 1 Year Limited Warranty.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "6.2 x 0.3 x 3.1 inches",
+    "Item Weight" : "6.1 ounces",
+    "Product Price" : [ 
+        "$349.98"
+    ],
+    "Customer Reviews" : "3.6 out of 5 stars"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("58f501542f1f9e448473ecbf"),
+    "Item model number" : "A1549",
+    "ASIN" : "B00YD54AYU",
+    "Shipping Weight" : "9.9 ounces (",
+    "Customer Reviews" : "3.4 out of 5 stars",
+    "Product Description" : "Built on 64-bit desktop-class architecture, the new A8 chip delivers more power, even while driving a larger display. PLEASE NOTE: Charge phone overnight before using for the first time to ensure full battery capability. In the event that the phone does not turn on initially - press and hold down the 'Power' and 'Home' buttons simultaneously until the Apple logo appears on the screen.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 0.3 x 2.6 inches",
+    "Date First Available" : "June 8, 2015",
+    "Item Weight" : "4.5 ounces",
+    "Product Price" : [ 
+        "$308.96"
+    ],
+    "Manufacturer" : "Apple"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("58f5015e2f1f9e448473ecc0"),
+    "Item model number" : "iPhone16GBRFGLDEU",
+    "ASIN" : "B00YD54GG2",
+    "Shipping Weight" : "11.4 ounces (",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 6 Plus Gold 16GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 1 Year Limited Warranty.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 2.6 x 0.3 inches",
+    "Item Weight" : "6.1 ounces",
+    "Product Price" : [ 
+        "$384.11"
+    ],
+    "Customer Reviews" : "3.3 out of 5 stars"
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("58f501642f1f9e448473ecc1"),
+    "Item model number" : "ME509LL/A-RB",
+    "ASIN" : "B00YD53U3M",
+    "Shipping Weight" : "10.4 ounces (",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 5C Pink 32GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 1 Year Limited Warranty.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.9 x 0.4 x 2.3 inches",
+    "Item Weight" : "10.4 ounces",
+    "Product Price" : [ 
+        "$170.00"
+    ],
+    "Customer Reviews" : "3.7 out of 5 stars"
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("58f5017c2f1f9e448473ecc2"),
+    "Item model number" : "MGC22LL/A-RB",
+    "ASIN" : "B00YD54RH0",
+    "Shipping Weight" : "9.6 ounces",
+    "Product Description" : "iPhone 6+ Unlocked S&D",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "6.2 x 0.3 x 3.1 inches",
+    "Item Weight" : "6.1 ounces",
+    "Product Price" : [],
+    "Customer Reviews" : "3.5 out of 5 stars"
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("58f501812f1f9e448473ecc3"),
+    "Item model number" : "A1549",
+    "ASIN" : "B00NQGP42Y",
+    "Shipping Weight" : "10.4 ounces (",
+    "Product Description" : "The Apple iPhone 6 comes with a 4.7 inch screen, an 8 megapixel camera and Apple A8 processor. The iPhone 6 also features near field communications capabilities (NFC) and a sleek design. Other features include a fingerprint reader and Siri personal assistant. This device is in GOOD cosmetic condition, it is 100% fully functional as tested by our expert technicians and passed an industry leading 65-point inspection.  Please be aware this device is previously owned and does have cosmetic wear such as light scratches on the screen and/or minor scuff, scratches or nicks on the housing and/or back of device.   The device has been thoroughly inspected, cleaned and refurbished (if necessary) at our manufacturer approved repair center.  Our devices are extensively inspected for quality and reliability, if you are not 100% satisfied we offer a 30-day money-back promise. Includes A/C Adapter & USB Cable. No other accessories, original box or manufacturer's warranty are included. This Verizon device is factory unlocked for use with most other CDMA or GSM carriers. Please contact your carrier to confirm compatibility prior to purchasing. Bands: GSM/EDGE: 850/900/1800/1900; CDMA: 800/1700/1900/2100; UMTS: 850/900/1700/1900/2100; LTE: 1/2/3/4/5/8/13/17/19/20/25/26/28/29",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 0.3 x 2.6 inches",
+    "Item Weight" : "4.5 ounces",
+    "Batteries" : "Lithium Metal batteries required.",
+    "Product Price" : [ 
+        "$375.00"
+    ],
+    "Customer Reviews" : "3.8 out of 5 stars"
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("58f501992f1f9e448473ecc4"),
+    "Item model number" : "MGC52LL/A-RB",
+    "ASIN" : "B00YD54N24",
+    "Shipping Weight" : "10.4 ounces (",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 6 Plus Space Gray 64GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 1 Year Limited Warranty.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "3.1 x 0.3 x 6.2 inches",
+    "Item Weight" : "10.4 ounces",
+    "Product Price" : [ 
+        "$429.99"
+    ],
+    "Customer Reviews" : "3.4 out of 5 stars"
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("58f501a52f1f9e448473ecc5"),
+    "Item model number" : "iPhone5",
+    "ASIN" : "B00WZR5URO",
+    "Shipping Weight" : "7.2 ounces (",
+    "Product Description" : "The Apple iPhone 5 has it all - brains and beauty. It features a beautiful and responsive 4\" Retina display to view all your favorite content. 16GB of internal memory means you'll have plenty of space to store your photos, videos and more. Capture incredible memories with the 8MP iSight camera that takes incredibly sharp images and also records video in HD quality. Stay connected with family and friends via the front-facing facetime HD camera. Stay online and in-the-know wherever you go via Built-in WiFi, Bluetooth and GPS. Powered by the acclaimed iOS 6 and with access to the app store featuring over 700,000 apps - you'll Get speedy results and endless options to keep you entertained. The power-efficient A6 chip delivers up to twice the CPU performance and renders graphics up to twice as fast - with even better battery life. The iPhone 5 connects to more networks all over the world. And Wi-Fi is faster, too. So you can browse, download, and stream content at remarkable speeds, wherever you happen to be. Please Note: this phone is OEM unlocked to work on all GSM carriers. Please check with your provider to ensure that all of your network features will work on this phone.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.5 x 0.4 x 2.3 inches",
+    "Item Weight" : "4 ounces",
+    "Product Price" : [ 
+        "$150.00"
+    ],
+    "Customer Reviews" : "3.0 out of 5 stars"
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("58f501ab2f1f9e448473ecc6"),
+    "Item model number" : "MGCR2LL/A-RB",
+    "ASIN" : "B00YD53FHS",
+    "Shipping Weight" : "8 ounces (",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 5C Green 8GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 1 Year Limited Warranty.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.9 x 0.3 x 2.3 inches",
+    "Item Weight" : "4.6 ounces",
+    "Product Price" : [ 
+        "$159.99"
+    ],
+    "Customer Reviews" : "3.2 out of 5 stars"
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("58f501bd2f1f9e448473ecc7"),
+    "Item model number" : "6s",
+    "ASIN" : "B01J8PBEUM",
+    "Shipping Weight" : "11.2 ounces (",
+    "Product Description" : "The moment you use iPhone 6s, you know you’ve never felt anything like it. With just a single press, 3D Touch lets you do more than ever before. Live Photos bring your memories to life in a powerfully vivid way. And that’s just the beginning. Take a deeper look at iPhone 6s, and you’ll find innovation on every level.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "7.6 x 4.7 x 2.7 inches",
+    "Item Weight" : "11.2 ounces",
+    "Product Price" : [ 
+        "$379.00"
+    ],
+    "Customer Reviews" : "4.2 out of 5 stars"
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("58f501cc2f1f9e448473ecc8"),
+    "Item model number" : "MG5D2LL/A-RB",
+    "ASIN" : "B00YD548Q0",
+    "Shipping Weight" : "8.5 ounces (",
+    "Customer Reviews" : "3.4 out of 5 stars",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 6 Gold 64GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 90 days Limited Warranty.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 0.3 x 2.6 inches",
+    "Date First Available" : "June 8, 2015",
+    "Item Weight" : "4.5 ounces",
+    "Product Price" : [ 
+        "$339.53"
+    ],
+    "Manufacturer" : "Apple Computer"
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("58f501d72f1f9e448473ecc9"),
+    "Item model number" : "77-50331",
+    "ASIN" : "B012O6DW8O",
+    "Shipping Weight" : "7.2 ounces (",
+    "Product Description" : "",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "7.4 x 4.5 x 1.8 inches",
+    "Item Weight" : "7.2 ounces",
+    "Product Price" : [ 
+        "$29.99"
+    ],
+    "Customer Reviews" : "4.3 out of 5 stars"
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("58f501f42f1f9e448473ecca"),
+    "Item model number" : "A050U ROSE GOLD",
+    "ASIN" : "B01E9BND2W",
+    "Shipping Weight" : "12 ounces (",
+    "Product Description" : "Bright and vivid 5.0 HD\" smartphone, the new Advance 5.0 HD blends technology and design into an incredible Package. Metal finish front frame brings out the front essence of a great smartphone while the natural sandstone finish with the special paint technology finish on the battery Cover ensure excellent hand held experience.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.6 x 0.3 x 2.7 inches",
+    "Item Weight" : "8 ounces",
+    "Batteries" : "1 Lithium ion batteries required. (included)",
+    "Product Price" : [ 
+        "$69.99"
+    ],
+    "Customer Reviews" : "3.6 out of 5 stars"
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("58f5020b2f1f9e448473eccb"),
+    "Item model number" : "M_BETTER",
+    "ASIN" : "B01KM1J38G",
+    "Shipping Weight" : "4.6 ounces (",
+    "Product Description" : "Color: Black",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.5 x 2.8 x 2.3 inches",
+    "Item Weight" : "1.6 ounces",
+    "Product Price" : [],
+    "Customer Reviews" : "4.3 out of 5 stars"
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("58f5021d2f1f9e448473eccc"),
+    "Item model number" : "HLCRIO121",
+    "ASIN" : "B00JRGOKQ8",
+    "International Shipping" : "This item can be shipped to select countries outside of the U.S.",
+    "Shipping Weight" : "8 ounces (",
+    "Product Description" : "The iOttie Easy One Touch 2 provides a safe, versatile and highly functional smartphone mounting solution. Like its predecessors, the One Touch Universal & the One Touch XL, our new One Touch 2 is packed with standard features like the iOttie patented one touch locking feature as well as the iOttie super sticky gel pad. The iOttie One Touch 2 also includes new features as well. It includes a new two-step locking lever which ensures your mount can be used on different surfaces. The first locking position can be used for flat, smooth surfaces, while the second locking position can be used on curvy textured surfaces that may require more grip. The One Touch 2 also offers a telescopic arm which extends up to 2 additional inches to provide you with even more viewing options when using your mount. The One Touch 2 also provides a new sliding bottom foot. Our redesigned bottom foot ensures that there is no interference with your devices bottom ports. The stickiness of the suction cup is infinite, just rinse with warm water and let air dry, restoring the gel pad to like new condition. No matter if your phone is protected by a skin or a case, the iOttie Easy One Touch 2 Car Mount grips securely onto your device so you can drive with confidence. Mount Smart. Drive Smarter!",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.3 x 5.5 x 2.7 inches",
+    "Item Weight" : "7.4 ounces",
+    "Domestic Shipping" : "Item can be shipped within U.S.",
+    "Product Price" : [ 
+        "$19.95"
+    ],
+    "Customer Reviews" : "4.3 out of 5 stars"
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("58f5022c2f1f9e448473eccd"),
+    "Item model number" : "MG592LL/A-RB",
+    "ASIN" : "B00YD54CES",
+    "Shipping Weight" : "9.6 ounces (",
+    "Customer Reviews" : "3.4 out of 5 stars",
+    "Product Description" : "What's in the box: Certified Refurbished iPhone 6 Gold 64GB Unlocked , USB Cable/Adapter. Comes in a Generic Box with a 90 days Limited Warranty. PLEASE NOTE: Charge phone overnight before using for the first time to ensure full battery capability. In the event that the phone does not turn on initially - press and hold down the 'Power' and 'Home' buttons simultaneously until the Apple logo appears on the screen.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 0.3 x 2.6 inches",
+    "Date First Available" : "June 8, 2015",
+    "Item Weight" : "4.5 ounces",
+    "Product Price" : [ 
+        "$354.99"
+    ],
+    "Manufacturer" : "Apple Computer"
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("58f5024e2f1f9e448473ecce"),
+    "Item model number" : "PB-0027",
+    "ASIN" : "B01LCDJ7LG",
+    "Shipping Weight" : "5 ounces (",
+    "Product Description" : "2",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "2.2 x 2.1 x 1.1 inches",
+    "Item Weight" : "3.4 ounces",
+    "Product Price" : [],
+    "Customer Reviews" : "4.7 out of 5 stars"
+}
+
+/* 32 */
+{
+    "_id" : ObjectId("58f502932f1f9e448473eccf"),
+    "Item model number" : "MG542LL/A-RB",
+    "ASIN" : "B00YD547Q6",
+    "Shipping Weight" : "10.4 ounces (",
+    "Customer Reviews" : "3.4 out of 5 stars",
+    "Product Description" : "What's in the box: Unlocked iPhone , USB Cable/Adapter. Comes in a Generic Box with a 90 days Limited Warranty. *IMPORTANT* - \"GSM unlocked.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 0.3 x 2.6 inches",
+    "Date First Available" : "June 8, 2015",
+    "Item Weight" : "10.4 ounces",
+    "Product Price" : [ 
+        "$279.64"
+    ],
+    "Manufacturer" : "Apple"
+}
+
+/* 33 */
+{
+    "_id" : ObjectId("58f502cb2f1f9e448473ecd0"),
+    "Item model number" : "BLU ADVANCE 5.0",
+    "ASIN" : "B018IZ0VLQ",
+    "Shipping Weight" : "8 ounces (",
+    "Product Description" : "Introducing the best value 5.0” smartphone, the Advance 5.0 blends technology and design into an incredible package. The shiny metal finishing on the front frame brings out the essence of a well-tailored smartphone while the leather pattern with smooth paint technology finish on the battery cover ensure an excellent hand held experience.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.7 x 2.8 x 0.3 inches",
+    "Item Weight" : "3.4 ounces",
+    "Batteries" : "1 Lithium ion batteries required. (included)",
+    "Product Price" : [ 
+        "$59.99"
+    ],
+    "Customer Reviews" : "3.6 out of 5 stars"
+}
+
+/* 34 */
+{
+    "_id" : ObjectId("58f502dc2f1f9e448473ecd1"),
+    "Item model number" : "CARCHARGER-BBLK",
+    "ASIN" : "B00ISGCAJM",
+    "Shipping Weight" : "1.6 ounces (",
+    "Product Description" : "",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5 x 4.4 x 1.2 inches",
+    "Item Weight" : "1.6 ounces",
+    "Product Price" : [],
+    "Customer Reviews" : "4.6 out of 5 stars"
+}
+
+/* 35 */
+{
+    "_id" : ObjectId("58f502e32f1f9e448473ecd2"),
+    "Item model number" : "Ip5-32-OEM-RB",
+    "ASIN" : "B00X3ZD93O",
+    "Shipping Weight" : "10.4 ounces (",
+    "Product Description" : "This Certified Refurbished product is tested and certified to look and work like new, with limited to no wear. The refurbishing process includes functionality testing, inspection, and repackaging. The product is backed by a minimum 90-day warranty, and may arrive in a generic box. The product ships with a charger and cable, but does not include headphone, manual or SIM card. Only select sellers who maintain a high performance bar may offer Certified Refurbished products on Amazon.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "2.5 x 4.5 x 0.5 inches",
+    "Item Weight" : "8 ounces",
+    "Product Price" : [ 
+        "$178.48"
+    ],
+    "Customer Reviews" : "3.0 out of 5 stars"
+}
+
+/* 36 */
+{
+    "_id" : ObjectId("58f502ef2f1f9e448473ecd3"),
+    "Item model number" : "iPhone 5C",
+    "ASIN" : "B00NZ8POMI",
+    "Shipping Weight" : "10.9 ounces (",
+    "Product Description" : "The iPhone 5C has the things that made iPhone 5 an amazing phone - and more. All in a complete new design.Specification. 2G GSM 850 900 1800 1900 3G HSDPA 850 900 1700 1900 2100 4G LTE carrier dependent. 4 in. LED-backlit IPS LCD Multi-Touchscreen. iOS 7 upgradable. 8 Mega pixel Camera 3264 x 2448 pixels. Camera Features Camera Features Face Time over Wi-Fi or Cellular Video. Dual-Core 1.3 GHz Swift ARM v7-based Processor Chipset Apple A6 PowerVR SGX 543MP3 triple-Core Graphics Graphics. Internal Memory 8GB 1GB RAM. Wi-Fi 802.11 abgn Dual-band Wi-Fi hotspot Bluetooth v4.0 with A2DP LE USB v2.0 GPS with A-GPS Support and GLONASS. Browser HTML Safari Messaging iMessage SMS threaded view MMS Email Push Email. Non-removable Li-Po 1510 mAh Battery Talk time Up to 10 h Standby time 250 Hours. Color - Green. Dimension - 4.66 L x 2.33 W x 4.9 H in.. Item Weight - 4.66 oz.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.9 x 0.3 x 2.3 inches",
+    "Item Weight" : "4.6 ounces",
+    "Product Price" : [ 
+        "$199.95"
+    ],
+    "Customer Reviews" : "3.8 out of 5 stars"
+}
+
+/* 37 */
+{
+    "_id" : ObjectId("58f502f22f1f9e448473ecd4"),
+    "Item model number" : "AK-A1263011",
+    "ASIN" : "B0194WDVHI",
+    "Shipping Weight" : "8 ounces (",
+    "Product Description" : "10000",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "3.6 x 2.4 x 0.9 inches",
+    "Item Weight" : "6.4 ounces",
+    "Product Price" : [],
+    "Customer Reviews" : "4.8 out of 5 stars"
+}
+
+/* 38 */
+{
+    "_id" : ObjectId("58f503062f1f9e448473ecd5"),
+    "Item model number" : "Unlocked 32 GB - US (Silver)",
+    "ASIN" : "B01M1P7JXE",
+    "Shipping Weight" : "1 pounds (",
+    "Product Description" : "The latest iPhone with advanced camera, better battery life, immersive speakers and water resistance!",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 2.6 x 0.3 inches",
+    "Item Weight" : "4.8 ounces",
+    "Product Price" : [ 
+        "$696.00"
+    ],
+    "Customer Reviews" : "4.3 out of 5 stars"
+}
+
+/* 39 */
+{
+    "_id" : ObjectId("58f5030e2f1f9e448473ecd6"),
+    "ASIN" : "B01C62I49I",
+    "Shipping Weight" : "11.4 ounces (",
+    "Product Description" : "The Apple iPhone 6 comes with a 4.7 inch screen, an 8 megapixel camera and Apple A8 processor. The iPhone 6 also features near field communications capabilities (NFC) and a sleek design. Other features include a fingerprint reader and Siri personal assistant.. This Amazon Certified Refurbished device has been refurbished at our approved repair center and comes with a 90-day return period. The phone may have minor cosmetic wear such as some light scratches on the screen and minor imperfections on sides and/or back. This device is factory unlocked for use with other carriers (CDMA or GSM). Please check with your carrier to confirm compatibility. Includes A/C Adapter & Data Cable. Does not include headphones, SIM card, MicroSD, user manual, original box. Manufacturer's warranty is not verified or implied.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "2.6 x 0.3 x 5.4 inches",
+    "Item Weight" : "4.5 ounces",
+    "Product Price" : [ 
+        "$359.99"
+    ],
+    "Customer Reviews" : "4.2 out of 5 stars"
+}
+
+/* 40 */
+{
+    "_id" : ObjectId("58f503262f1f9e448473ecd7"),
+    "Item model number" : "iPhone 6",
+    "ASIN" : "B00NQGP5X2",
+    "Shipping Weight" : "7 ounces (",
+    "Product Description" : "The Apple iPhone 6 comes with a 4.7 inch screen, an 8 megapixel camera and Apple A8 processor. The iPhone 6 also features near field communications capabilities (NFC) and a sleek design. Other features include a fingerprint reader and Siri personal assistant. This device is in GOOD cosmetic condition, it is 100% fully functional as tested by our expert technicians and passed an industry leading 65-point inspection.  Please be aware this device is previously owned and does have cosmetic wear such as light scratches on the screen and/or minor scuff, scratches or nicks on the housing and/or back of device.   The device has been thoroughly inspected, cleaned and refurbished (if necessary) at our manufacturer approved repair center.  Our devices are extensively inspected for quality and reliability, if you are not 100% satisfied we offer a 30-day money-back promise. This device is unlocked for use with other GSM carriers such as T-Mobile & AT&T. Please check with your carrier to confirm compatibility. Includes A/C Adapter & USB Cable. Does not include any other accessories, original box or manufacturer's warranty.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 2.6 x 0.3 inches",
+    "Item Weight" : "4.5 ounces",
+    "Batteries" : "Lithium Metal batteries required.",
+    "Product Price" : [ 
+        "$428.95"
+    ],
+    "Customer Reviews" : "3.8 out of 5 stars"
+}
+
+/* 41 */
+{
+    "_id" : ObjectId("58f503332f1f9e448473ecd8"),
+    "Item model number" : "2pkGL.iPH-6",
+    "ASIN" : "B01415QHYW",
+    "Shipping Weight" : "0.3 ounces (",
+    "Product Description" : "",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "6.2 x 3.5 x 0.2 inches",
+    "Item Weight" : "0.2 ounces",
+    "Product Price" : [],
+    "Customer Reviews" : "4.3 out of 5 stars"
+}
+
+/* 42 */
+{
+    "_id" : ObjectId("58f503412f1f9e448473ecd9"),
+    "Item model number" : "B01C8FPKNG",
+    "ASIN" : "B01C8FPKNG",
+    "Shipping Weight" : "8 ounces (",
+    "Product Description" : "",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "8.5 x 4.2 x 0.6 inches",
+    "Item Weight" : "8 ounces",
+    "Product Price" : [ 
+        "$14.99"
+    ],
+    "Customer Reviews" : "3.3 out of 5 stars"
+}
+
+/* 43 */
+{
+    "_id" : ObjectId("58f5034c2f1f9e448473ecda"),
+    "Item model number" : "iPhone5",
+    "ASIN" : "B0097CZF5C",
+    "Shipping Weight" : "3.2 ounces (",
+    "Product Description" : "Body Dimensions 123.8 x 58.6 x 7.6 mm (4.87 x 2.31 x 0.30 in) Weight 112 g (3.95 oz) SIM Nano-SIM Display Type LED-backlit IPS LCD, capacitive touchscreen, 16M colors Size 4.0 inches (~60.8% screen-to-body ratio) Resolution 640 x 1136 pixels (~326 ppi pixel density) Multitouch Yes Protection Corning Gorilla Glass, oleophobic coating Platform OS iOS 6, upgradable to iOS 7.1.2, upgradable to iOS 8.2 Chipset Apple A6 CPU Dual-core 1.3 GHz Swift (ARM v7-based) GPU PowerVR SGX 543MP3 (triple-core graphics) Memory Card slot No Internal 16/32/64 GB, 1 GB RAM DDR2 Camera Primary 8 MP, 3264 x 2448 pixels, autofocus, LED flash, check quality Features 1/3.2'' sensor size, 1.4 µm pixel size, simultaneous HD video and image recording, touch focus, geo-tagging, face detection, panorama, HDR photo Video 1080p@30fps, check quality Secondary 1.2 MP, 720p@30fps, face detection, FaceTime over Wi-Fi or Cellular Sound Alert types Vibration, proprietary ringtones Loudspeaker Yes 3.5mm jack Yes Comms WLAN Wi-Fi 802.11 a/b/g/n, dual-band, hotspot Bluetooth v4.0, A2DP, LE GPS Yes, with A-GPS, GLONASS Radio No USB v2.0, reversible connector Features Sensors Accelerometer, gyro, proximity, compass Messaging iMessage, SMS (threaded view), MMS, Email, Push Email Browser HTML5 (Safari) Java No - Active noise cancellation with dedicated mic - AirDrop file sharing - Siri natural language commands and dictation - iCloud cloud service - TV-out - Maps - Audio/video player/editor - Organizer - Document viewer/editor - Photo viewer/editor - Voice memo/dial/command - Predictive text input",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "2.5 x 0.5 x 4.5 inches",
+    "Item Weight" : "8 ounces",
+    "Product Price" : [ 
+        "$264.75"
+    ],
+    "Customer Reviews" : "3.5 out of 5 stars"
+}
+
+/* 44 */
+{
+    "_id" : ObjectId("58f503532f1f9e448473ecdb"),
+    "Item model number" : "iPhone5",
+    "ASIN" : "B00WZR5ULU",
+    "Shipping Weight" : "2.4 ounces (",
+    "Product Description" : "A beautiful aluminum body designed and made with an unprecedented level of precision. iPhone 5 measures a mere 7.6 millimeters thin and weighs just 112 grams. That's 18 percent thinner and 20 percent lighter than iPhone 4S. The only way to achieve a design like this is by relentlessly considering (and reconsidering) every single detail - including the details you don't see.",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "4.9 x 2.3 x 0.3 inches",
+    "Item Weight" : "2.4 ounces",
+    "Product Price" : [ 
+        "$150.00"
+    ],
+    "Customer Reviews" : "3.0 out of 5 stars"
+}
+
+/* 45 */
+{
+    "_id" : ObjectId("58f503792f1f9e448473ecdc"),
+    "Item model number" : "iPhone 6",
+    "ASIN" : "B00NQGP3SO",
+    "Shipping Weight" : "13.6 ounces (",
+    "Product Description" : "",
+    "Best Sellers Rank" : "",
+    "Product Dimensions" : "5.4 x 0.3 x 2.6 inches",
+    "Item Weight" : "4.5 ounces",
+    "Batteries" : "Lithium Metal batteries required.",
+    "Product Price" : [ 
+        "$373.95"
+    ],
+    "Customer Reviews" : "3.8 out of 5 stars"
+}
