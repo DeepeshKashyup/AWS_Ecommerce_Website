@@ -7,8 +7,8 @@ import pymongo
 
 connection = pymongo.MongoClient("mongodb://localhost:27017/");
 
-db = connection.Products
-p = db.electronics
+db = connection.Shopping
+p = db.products
 
 def getProductBySearchKey(search):
     search = search
@@ -33,7 +33,9 @@ def getProductBySearchKey(search):
         tree = html.fromstring(page.content)
 
         productdescription = tree.xpath(".//div[@id='productDescription']//p/text()")
-        productprice = tree.xpath(".//span[@id='priceblock_ourprice']/text()")
+        productprice = tree.xpath(".//span[@id='priceblock_ourprice']/text()")[0]
+        imgPath = tree.xpath(".//div[@id='imgTagWrapperId']//img/@src")[0]
+        title = tree.xpath(".//div[@id='titleSection']//span[@id='productTitle']/text()")[0]      
         print productprice
         if(len(productdescription) > 0):
             productdescription = productdescription[0].strip()
@@ -42,21 +44,23 @@ def getProductBySearchKey(search):
         productDeatilsTable = tree.xpath(".//table[@id='productDetails_detailBullets_sections1']")
         if(len(productDeatilsTable) > 0):
             productAttributeRows = productDeatilsTable[0].xpath(".//tr")
-            reviewData[productAsin].append({'Product Description':productdescription})
+            reviewData[productAsin].append({'ProductDescription':productdescription})
             rowdetails ={}
-            rowdetails['Product Description']  =productdescription
-            rowdetails['Product Price'] = productprice
+            rowdetails['description']  =productdescription
+            rowdetails['price'] = productprice
+            rowdetails['imgPath'] = imgPath
+            rowdetails['title'] = title
             for row in productAttributeRows:
                 #rowdetails = {}
                 th = row.xpath(".//th/text()")[0].strip()
                 if th == "Customer Reviews" or th== "Best Sellers Rank":
                     td = row.xpath(".//td/text()")[-1].strip()
                 elif th == "Date first available at Amazon.com":
-                    th = "Date First Available"
+                    th = "Availablity"
                     td = row.xpath(".//td/text()")[-1].strip()
                 else:
                     td = row.xpath(".//td/text()")[0].strip()
-                rowdetails[th] = td
+                rowdetails[th.replace(' ','')] = td
             print rowdetails
             p_id = p.insert(rowdetails)
             reviewData[productAsin].append(rowdetails)
