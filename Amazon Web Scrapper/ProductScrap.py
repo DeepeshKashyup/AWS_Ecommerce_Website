@@ -33,14 +33,19 @@ def getProductBySearchKey(search):
         tree = html.fromstring(page.content)
 
         productdescription = tree.xpath(".//div[@id='productDescription']//p/text()")
-        productprice = tree.xpath(".//span[@id='priceblock_ourprice']/text()")[0]
+        productprice = tree.xpath(".//span[@id='priceblock_ourprice']/text()")
         imgPath = tree.xpath(".//div[@id='imgTagWrapperId']//img/@src")[0]
         title = tree.xpath(".//div[@id='titleSection']//span[@id='productTitle']/text()")[0]      
-        print productprice
+        
         if(len(productdescription) > 0):
             productdescription = productdescription[0].strip()
         else:
             productdescription = ""
+
+        if(len(productprice) > 0):
+            productprice = productprice[0].strip()
+        else:
+            productprice = ""
         productDeatilsTable = tree.xpath(".//table[@id='productDetails_detailBullets_sections1']")
         if(len(productDeatilsTable) > 0):
             productAttributeRows = productDeatilsTable[0].xpath(".//tr")
