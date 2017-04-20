@@ -2,6 +2,8 @@
  * Created by deepe on 4/18/2017.
  */
 var mongoose = require('mongoose');
+//pagination
+var mongoosePaginate = require('mongoose-paginate');
 var Schema = mongoose.Schema;
 
 var schema = new Schema({
@@ -11,4 +13,7 @@ var schema = new Schema({
     price :{type : String,required:true}
 });
 
-module.exports = mongoose.model('Product',schema);
+//pagination
+schema.plugin(mongoosePaginate)
+
+module.exports = mongoose.model("Product",schema);
