@@ -10,6 +10,13 @@ connection = pymongo.MongoClient("mongodb://localhost:27017/");
 db = connection.Shopping
 p = db.products
 
+def fieldValidation(field):
+    if(len(field) > 0):
+            value = field[0].strip()
+    else:
+            value = ""
+    return value
+
 def getProductBySearchKey(search):
     search = search
     productDict = amazon.getProductURLArray(search)
@@ -36,16 +43,10 @@ def getProductBySearchKey(search):
         productprice = tree.xpath(".//span[@id='priceblock_ourprice']/text()")
         imgPath = tree.xpath(".//div[@id='imgTagWrapperId']//img/@src")[0]
         title = tree.xpath(".//div[@id='titleSection']//span[@id='productTitle']/text()")[0]      
-        
-        if(len(productdescription) > 0):
-            productdescription = productdescription[0].strip()
-        else:
-            productdescription = ""
 
-        if(len(productprice) > 0):
-            productprice = productprice[0].strip()
-        else:
-            productprice = ""
+        productdescription = fieldValidation(productdescription);
+        productprice = fieldValidation(productprice);
+        
         productDeatilsTable = tree.xpath(".//table[@id='productDetails_detailBullets_sections1']")
         if(len(productDeatilsTable) > 0):
             productAttributeRows = productDeatilsTable[0].xpath(".//tr")
