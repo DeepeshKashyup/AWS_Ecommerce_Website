@@ -46,7 +46,8 @@ def getProductBySearchKey(search):
 
         productdescription = fieldValidation(productdescription);
         productprice = fieldValidation(productprice);
-        
+        title = fieldValidation(title);
+        imgPath = fieldValidation(imgPath);
         productDeatilsTable = tree.xpath(".//table[@id='productDetails_detailBullets_sections1']")
         if(len(productDeatilsTable) > 0):
             productAttributeRows = productDeatilsTable[0].xpath(".//tr")
