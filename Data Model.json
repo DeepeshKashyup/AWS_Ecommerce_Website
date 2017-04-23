@@ -49,3 +49,10 @@ db.products.insert(
 mongo    
 use Shopping 
 db.products.update({sku: "111445GB3"}, {$set: { categories: ['mobile/15G', 'mobile/fm'] }});
+
+
+//To support efficient queries using the categories field, add an index on the categories field for the products collection:
+db.products.ensureIndex({categories:1 })
+
+//Category Search Example
+db.products.find({categories: /^Cell/})

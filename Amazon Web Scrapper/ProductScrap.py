@@ -10,6 +10,7 @@ connection = pymongo.MongoClient("mongodb://localhost:27017/");
 db = connection.Shopping
 p = db.products
 
+
 ##doc = p.find_one({'ASIN':'B00NQGP42Y'});
 ##print doc
 
@@ -26,7 +27,10 @@ def getProductBySearchKey(search):
     valid = 200
     reviewData = {}
     count = 0
+    #reviewData['categories'] = search
     for productAsin in productDict:
+        
+        print "Doc Count :",count+1
         #fetch iframeURL and fetch all review page url
         count += 1
         print("PRODUCT[ASIN]: " + productAsin)
@@ -50,14 +54,18 @@ def getProductBySearchKey(search):
         productdescription = tree.xpath(".//div[@id='productDescription']//p/text()")
         productprice = tree.xpath(".//span[@id='priceblock_ourprice']/text()")
         imgPath = tree.xpath(".//div[@id='imgTagWrapperId']//img/@src")
-        title = tree.xpath(".//div[@id='titleSection']//span[@id='productTitle']/text()")    
+        title = tree.xpath(".//div[@id='titleSection']//span[@id='productTitle']/text()")
+        
         #print 'imgpath ',imgPath
         productdescription = fieldValidation(productdescription);
         productprice = fieldValidation(productprice);
         title = fieldValidation(title);
+        if len(title) == 0:
+            continue;
         print "title ",title
         imgPath = fieldValidation(imgPath);
         rowdetails ={}
+        rowdetails['categories'] = search
         rowdetails['description']  =productdescription
         rowdetails['price'] = productprice
         rowdetails['imgPath'] = imgPath
@@ -91,10 +99,11 @@ def getProductBySearchKey(search):
     return reviewData
 #    return d
 
-getProductBySearchKey("tshirts")
-data = getProductBySearchKey("iphone")
+getProductBySearchKey("Cell Phones & Accessories")
+getProductBySearchKey("Tv & Video")
+getProductBySearchKey("Video Games")
+getProductBySearchKey("Men's Grooming")
+getProductBySearchKey("Men's Clothing")
+getProductBySearchKey("Women's Clothing")
+getProductBySearchKey("Exercise & Fitness")
 
-getProductBySearchKey("food")
-getProductBySearchKey("music")
-getProductBySearchKey("games")
-print(len(data))
