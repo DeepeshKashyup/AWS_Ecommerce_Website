@@ -10,6 +10,9 @@ connection = pymongo.MongoClient("mongodb://localhost:27017/");
 db = connection.Shopping
 p = db.products
 
+##doc = p.find_one({'ASIN':'B00NQGP42Y'});
+##print doc
+
 def fieldValidation(field):
     if(len(field) > 0):
             value = field[0].strip()
@@ -26,11 +29,16 @@ def getProductBySearchKey(search):
     for productAsin in productDict:
         #fetch iframeURL and fetch all review page url
         count += 1
-
         print("PRODUCT[ASIN]: " + productAsin)
+        #print type(productAsin)
+        doc = p.find_one({'ASIN':str(productAsin)});
+        #print doc
+        if doc is not None:
+            continue;
+
         reviewData[productAsin] = []
 
-
+        
         status_code = -1
         page = requests.get(productDict[productAsin])
         while(status_code != valid):                            #ensures page returns valid response
@@ -41,22 +49,25 @@ def getProductBySearchKey(search):
 
         productdescription = tree.xpath(".//div[@id='productDescription']//p/text()")
         productprice = tree.xpath(".//span[@id='priceblock_ourprice']/text()")
-        imgPath = tree.xpath(".//div[@id='imgTagWrapperId']//img/@src")[0]
-        title = tree.xpath(".//div[@id='titleSection']//span[@id='productTitle']/text()")[0]      
-
+        imgPath = tree.xpath(".//div[@id='imgTagWrapperId']//img/@src")
+        title = tree.xpath(".//div[@id='titleSection']//span[@id='productTitle']/text()")    
+        #print 'imgpath ',imgPath
         productdescription = fieldValidation(productdescription);
         productprice = fieldValidation(productprice);
         title = fieldValidation(title);
+        print "title ",title
         imgPath = fieldValidation(imgPath);
+        rowdetails ={}
+        rowdetails['description']  =productdescription
+        rowdetails['price'] = productprice
+        rowdetails['imgPath'] = imgPath
+        rowdetails['title'] = title
         productDeatilsTable = tree.xpath(".//table[@id='productDetails_detailBullets_sections1']")
         if(len(productDeatilsTable) > 0):
             productAttributeRows = productDeatilsTable[0].xpath(".//tr")
             reviewData[productAsin].append({'ProductDescription':productdescription})
-            rowdetails ={}
-            rowdetails['description']  =productdescription
-            rowdetails['price'] = productprice
-            rowdetails['imgPath'] = imgPath
-            rowdetails['title'] = title
+            #rowdetails ={}
+            
             for row in productAttributeRows:
                 #rowdetails = {}
                 th = row.xpath(".//th/text()")[0].strip()
@@ -68,9 +79,9 @@ def getProductBySearchKey(search):
                 else:
                     td = row.xpath(".//td/text()")[0].strip()
                 rowdetails[th.replace(' ','')] = td
-            print rowdetails
-            p_id = p.insert(rowdetails)
-            reviewData[productAsin].append(rowdetails)
+        #print rowdetails
+        p_id = p.insert(rowdetails)
+        #reviewData[productAsin].append(rowdetails)
             #print(reviewData[productAsin])
 #            d = pandas.DataFrame.from_dict(reviewData, orient='columns')
 #            print(d[productAsin])
@@ -78,7 +89,10 @@ def getProductBySearchKey(search):
     return reviewData
 #    return d
 
-
+getProductBySearchKey("tshirts")
 data = getProductBySearchKey("iphone")
 
+getProductBySearchKey("food")
+getProductBySearchKey("music")
+getProductBySearchKey("games")
 print(len(data))
