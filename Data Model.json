@@ -1,0 +1,51 @@
+
+//Sample Document
+
+{
+    "_id" : ObjectId("58fc43092f1f9e204448fd89"),
+    "Origin" : "China",
+    "ASIN" : "B00ISQI54G",
+    "ItemWeight" : "0.3 ounces",
+    "description" : "Wooku Mobile Phone Holder Mount Clip Buckle Socket Hands Free on Car Steering Wheel for iPhone 5/5G/ 4/4S,HTC, Samsung Galaxy, PDA and Smart Cellphones",
+    "title" : "Wooku Mobile Phone Holder Mount Clip Buckle Socket Hands Free on Car Steering Wheel for iPhone 5/5G/ 4/4S,HTC, Samsung Galaxy, PDA and Smart Cellphones",
+    "price" : "$1.69",
+    "imgPath" : "https://images-na.ssl-images-amazon.com/images/I/51J7xrc80OL._SY300_QL70_.jpg",
+    "ShippingWeight" : "0.3 ounces (",
+    "CustomerReviews" : "3.1 out of 5 stars",
+    "BestSellersRank" : "",
+    "Californiaresidents" : "",
+    "Department" : "Womens",
+    "ProductDimensions" : "4.7 x 2 x 1.2 inches",
+    "Itemmodelnumber" : "pingtin qin",
+    "categories" : "Cell Phones & Accessories",
+    "Manufacturer" : "Wooku"
+}
+
+// Insert Example
+mongo    
+use Shopping    
+db.products.insert(
+{
+    "_id" : ObjectId("58fc43092f1f9e204448fd89"),
+    "Origin" : "China",
+    "ASIN" : "B00ISQI54G",
+    "ItemWeight" : "0.3 ounces",
+    "description" : "Wooku Mobile Phone Holder Mount Clip Buckle Socket Hands Free on Car Steering Wheel for iPhone 5/5G/ 4/4S,HTC, Samsung Galaxy, PDA and Smart Cellphones",
+    "title" : "Wooku Mobile Phone Holder Mount Clip Buckle Socket Hands Free on Car Steering Wheel for iPhone 5/5G/ 4/4S,HTC, Samsung Galaxy, PDA and Smart Cellphones",
+    "price" : "$1.69",
+    "imgPath" : "https://images-na.ssl-images-amazon.com/images/I/51J7xrc80OL._SY300_QL70_.jpg",
+    "ShippingWeight" : "0.3 ounces (",
+    "CustomerReviews" : "3.1 out of 5 stars",
+    "BestSellersRank" : "",
+    "Californiaresidents" : "",
+    "Department" : "Womens",
+    "ProductDimensions" : "4.7 x 2 x 1.2 inches",
+    "Itemmodelnumber" : "pingtin qin",
+    "categories" : "Cell Phones & Accessories",
+    "Manufacturer" : "Wooku"
+})
+
+// Update Example
+mongo    
+use Shopping 
+db.products.update({sku: "111445GB3"}, {$set: { categories: ['mobile/15G', 'mobile/fm'] }});
