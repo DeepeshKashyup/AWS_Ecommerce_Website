@@ -62,6 +62,7 @@ def getProductBySearchKey(search):
         rowdetails['price'] = productprice
         rowdetails['imgPath'] = imgPath
         rowdetails['title'] = title
+        rowdetails['ASIN'] = str(productAsin)
         productDeatilsTable = tree.xpath(".//table[@id='productDetails_detailBullets_sections1']")
         if(len(productDeatilsTable) > 0):
             productAttributeRows = productDeatilsTable[0].xpath(".//tr")
@@ -81,6 +82,7 @@ def getProductBySearchKey(search):
                 rowdetails[th.replace(' ','')] = td
         #print rowdetails
         p_id = p.insert(rowdetails)
+        print p_id
         #reviewData[productAsin].append(rowdetails)
             #print(reviewData[productAsin])
 #            d = pandas.DataFrame.from_dict(reviewData, orient='columns')
