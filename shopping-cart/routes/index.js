@@ -32,8 +32,15 @@ router.get('/', function(req, res, next) {
     });
 });
 
-router.get('/CellPhones&Accessories/:page', function(req, res, next) {
-    Product.paginate({categories: /^Cell/}, { page: req.param("page"), limit: 9 },function(err,result){
+router.get('^/[aA-zZ]+&?[aA-zZ]*/:page', function(req, res, next) {
+
+    path = req.path.split("/")[1];
+    searchQuery = path.split("&")[0];
+
+    var queryParm = {categories:searchQuery}
+    console.log("Search Query :"+new RegExp(searchQuery));
+    console.log("Query Parm:"+queryParm);
+    Product.paginate({categories:new RegExp(searchQuery)}, { page: req.param("page"), limit: 9 },function(err,result){
         var docs = result.docs;
         var productChunks = [];
         var chunkSize =3;
@@ -49,7 +56,7 @@ router.get('/CellPhones&Accessories/:page', function(req, res, next) {
         console.log(current_page);
         for(var i=0;i<docs.length;i+=chunkSize){
             productChunks.push(docs.slice(i,i+chunkSize));
-            //console.log(productChunks);
+            //console.log("docs:"+productChunks);
         }
         res.render('shop/index', { title: 'Shopping Cart'
             , products:productChunks
@@ -62,34 +69,6 @@ router.get('/CellPhones&Accessories/:page', function(req, res, next) {
 
                 for(var i=1, j=result.total%9; i<=j; i++) {
                     ret = ret +"<li class=\"page-item\"><a class=\"page-link\" href=\"/"+path+"/"+i+"\">"+i+"</a></li>";
-                    //+ "<li>" + options.fn(context[i]) + "</li>"
-                }
-
-                return ret;
-            }
-            }
-        });
-    });
-});
-
-router.get('/Games/:page', function(req, res, next) {
-    Product.paginate({categories: /^Games/}, { page: req.param("page"), limit: 9 },function(err,result){
-        var docs = result.docs;
-        var productChunks = [];
-        var chunkSize =3;
-        console.log(req);
-        //console.log(docs.length);
-        for(var i=0;i<docs.length;i+=chunkSize){
-            productChunks.push(docs.slice(i,i+chunkSize));
-            //console.log(productChunks);
-        }
-        res.render('shop/index', { title: 'Shopping Cart'
-            , products:productChunks
-            , helpers: { foo : function (){
-                var ret="";
-
-                for(var i=1, j=result.total%9; i<=j; i++) {
-                    ret = ret +"<li class=\"page-item\"><a class=\"page-link\" href=\"/1\">"+i+"</a></li>";
                     //+ "<li>" + options.fn(context[i]) + "</li>"
                 }
 
