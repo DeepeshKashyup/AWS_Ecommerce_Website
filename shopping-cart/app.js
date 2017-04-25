@@ -11,9 +11,11 @@ var mongoose = require('mongoose');
 var app = express();
 
 // mongoose connection
-mongoose.connect('localhost:27017/Shopping');
+
+mongoose.connect('ec2-52-41-234-253.us-west-2.compute.amazonaws.com:27017/Shopping');
+//mongoose.connect('localhost:27017/Shopping');
 // view engine setup
-app.engine('.hbs',expressHbs({defaultLayout : 'Layout',extname :'.hbs'}));
+app.engine('.hbs',expressHbs({defaultLayout : 'layout',extname :'.hbs'}));
 app.set('view engine', '.hbs');
 
 // uncomment after placing your favicon in /public

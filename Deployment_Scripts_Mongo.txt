@@ -1,0 +1,9 @@
+1) Goto Root
+sudo mkdir -p data/db
+
+2) Give all permissions to data/db
+sudo chmod 777 data/db
+
+3) mongod
+
+4) mongoimport --db Shopping --collection products  data.json

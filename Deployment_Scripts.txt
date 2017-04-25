@@ -1,0 +1,80 @@
+
+1) Make an account on Amazon Web Services
+http://aws.amazon.com/
+
+2) Create a vanilla Ubuntu micro EC2 instance
+
+3) Security 
+Open HTTP, HTTPS, Port 8080, and Port 9000
+
+4) Launch the instance and save the pem file (private key)
+
+5) Make sure that pem file has correct permissions
+chown :Users node.pem
+chmod 600 node.pem
+
+5) Update Ubuntu and install these packages
+sudo apt-get update
+sudo apt-get install libssl-dev g++ make
+
+6) http://nodejs.org/download/
+(Get node source files)
+wget http://nodejs.org/dist/v0.10.32/node-...
+
+7) Extract the packed tar.gz and change directory
+tar -xvf node-v0.10.32.tar.gz
+cd node-v0.10.32
+
+	
+8) Execute the binaries, make, and install
+./configure && make && sudo make install
+
+	8.1) ## if getting this error --> /usr/bin/env: ‘python’: No such file or directory
+			Run Command to install python’
+			
+
+		
+9) cd ../
+mkdir test1
+cd test1
+vim test1.js
+
+(Insert is to edit as esc :x is to save)
+
+10) var http = require('http');
+
+var port = 9000;
+
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello there, world!\n');
+}).listen(port);
+
+console.log('Listening on port', port);
+
+11) node test1.js (to run the javascript file on node)
+CTRL+C to exit command
+nohup node test1.js & (to run as a background process - no hiccup)
+ps -ef (to check all background processes)
+kill id_number
+
+12) cd /home/ubuntu
+sudo npm install express
+
+13) mkdir test2
+vim test2.js
+
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res){
+    res.send('Hello there, world!\n');
+});
+
+var port = 9000;
+app.listen(port);
+console.log('Listening on port', port);
+
+14) Reroute IP Tables so that javascript file also displays on port 80
+
+sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 9000

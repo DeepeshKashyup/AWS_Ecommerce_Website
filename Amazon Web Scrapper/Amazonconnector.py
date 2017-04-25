@@ -6,6 +6,7 @@ import amazonproduct
 #access_key = <your access key>
 #secret_key = <your secret key>
 #associate_tag = <your associate id>
+
 api = amazonproduct.API(locale='us')
 
 def searchItem(key):
