@@ -1,0 +1,13 @@
+misc:
+    dindex:
+        name: Shopping
+        as: Shopping
+    ctype:
+        name: products
+        as: products
+mongo:
+    host: localhost
+    port: 27017
+elastic:
+    host: localhost
+    port: 9200
