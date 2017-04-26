@@ -1,8 +1,46 @@
 var express = require('express');
 var router = express.Router();
 var Product = require('../model/products');
-/* GET home page. */
+/* Elastic Search changes*/
+var elasticsearch = require('elasticsearch');
+var client = new elasticsearch.Client({
+    host: 'localhost:9200',
+    log: 'trace'
+});
 
+client.ping({
+    // ping usually has a 3000ms timeout
+    requestTimeout: 1000
+}, function (error) {
+    if (error) {
+        console.trace('elasticsearch cluster is down!');
+    } else {
+        console.log('All is well');
+    }
+});
+
+/*
+ client.search({
+ index: 'shopping',
+ type: 'products',
+ body: {
+ query: {
+ match: {
+ title: "Apple"
+ }
+ }
+ }
+ }).then(function (resp) {
+ // console.log(resp)
+ var hits = resp.hits.hits;
+ console.log(hits)
+ }, function (err) {
+ console.trace(err.message);
+ });*/
+
+
+
+/* GET home page. */
 router.get('/', function(req, res, next) {
     Product.paginate({}, { page: 1, limit: 9 },function(err,result){
         var docs = result.docs;
@@ -32,6 +70,62 @@ router.get('/', function(req, res, next) {
     });
 });
 
+/* ES Changes */
+//^search?q=:query
+router.post('/search',function(request,response,next){
+    var pageNum = 1;
+    var perPage = 9;
+    var userQuery = request.body.query;
+    console.log(userQuery);
+    //var userId = request.session.userId;
+    console.log(request);
+    var searchParams = {
+        index: 'shopping',
+        from: (pageNum - 1) * perPage,
+        size: perPage,
+        type: 'products',
+        body: {
+            query: {
+
+                match: {
+                            // match the query against all of
+                            // the fields in the posts index
+                            title: userQuery
+                }
+
+
+            }
+        }
+    };
+
+    client.search(searchParams, function (err, res) {
+        if (err) {
+            // handle error
+            throw err;
+        }
+        var results = res.hits.hits.map(function(i){
+            return i['_source'];
+        });
+        /*var results = res['hits']['hits'].map(function(i){
+            return i['_source'];
+        });*/
+        console.log(results);
+        //var docs = res.hits.hits._source;
+        //console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for(var i = 0;i<results.length;i+=chunkSize){
+         productChunks.push(results.slice(i,i+chunkSize));
+         console.log(productChunks);
+        }
+        response.render('shop/index', {
+            products: productChunks
+            //page: pageNum,
+            //pages: Math.ceil(res.hits.total / perPage)
+        });
+    });
+});
+
 router.get('^/[aA-zZ]+&?[aA-zZ]*/:page', function(req, res, next) {
 
     path = req.path.split("/")[1];
@@ -44,8 +138,8 @@ router.get('^/[aA-zZ]+&?[aA-zZ]*/:page', function(req, res, next) {
         var docs = result.docs;
         var productChunks = [];
         var chunkSize =3;
-        //console.log(docs.length);
-        //console.log(req);
+        console.log(docs);
+        console.log(typeof(result.docs));
         path = req.path.split("/")[1];
         current_page = parseInt(req.path.split("/")[2]);
         if(current_page==1)

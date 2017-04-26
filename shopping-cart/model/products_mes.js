@@ -1,7 +1,13 @@
 /**
  * Created by deepe on 4/18/2017.
+ * Did not work
  */
+
 var mongoose = require('mongoose');
+var elasticsearch = require('elasticsearch')
+var esClient = new elasticsearch.Client({host: 'localhost:9200'});
+var mongoosastic = require('mongoosastic');
+
 //pagination
 var mongoosePaginate = require('mongoose-paginate');
 var Schema = mongoose.Schema;
@@ -15,5 +21,8 @@ var schema = new Schema({
 
 //pagination
 schema.plugin(mongoosePaginate)
-//schema.plugin(mongoosastic)
+schema.plugin(mongoosastic, {
+    esClient: esClient
+})
+
 module.exports = mongoose.model("Product",schema);
