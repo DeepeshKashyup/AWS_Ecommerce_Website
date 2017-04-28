@@ -25,30 +25,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="80" column="4" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+            <state relative-caret-position="1323">
+              <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
               <folding>
                 <element signature="e#1009#1036#0" expanded="false" />
                 <element signature="e#1143#1255#0" expanded="false" />
                 <element signature="e#1374#1740#0" expanded="false" />
                 <element signature="e#1393#1726#0" expanded="false" />
                 <element signature="e#1482#1679#0" expanded="false" />
-                <element signature="e#4559#4897#0" expanded="false" />
-                <element signature="e#4648#4854#0" expanded="false" />
+                <element signature="e#4562#4900#0" expanded="false" />
+                <element signature="e#4651#4857#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/shop/index.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -66,18 +56,18 @@
       <file leaf-file-name="layout.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layouts/layout.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="147">
+              <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/header.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="36" column="92" lean-forward="false" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="92" />
+            <state relative-caret-position="290">
+              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -127,6 +117,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/shop/index.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -166,8 +166,8 @@
         <option value="$PROJECT_DIR$/test/elasticsearch.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/test/es-client.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/partials/header.hbs" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
       </list>
     </option>
   </component>
@@ -472,16 +472,15 @@
       <workItem from="1493072293334" duration="1936000" />
       <workItem from="1493131623905" duration="9190000" />
       <workItem from="1493155602904" duration="2340000" />
-      <workItem from="1493232599739" duration="12006000" />
+      <workItem from="1493232599739" duration="15679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64739000" />
+    <option name="totallyTimeSpent" value="68412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21267454" sideWeight="0.48630136" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -491,7 +490,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21267454" sideWeight="0.51369864" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24919441" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38505095" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38505095" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21267454" sideWeight="0.50396377" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -555,8 +554,8 @@
             <element signature="e#1374#1740#0" expanded="false" />
             <element signature="e#1393#1726#0" expanded="false" />
             <element signature="e#1482#1679#0" expanded="false" />
-            <element signature="e#4559#4897#0" expanded="false" />
-            <element signature="e#4648#4854#0" expanded="false" />
+            <element signature="e#4562#4900#0" expanded="false" />
+            <element signature="e#4651#4857#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -635,8 +634,8 @@
             <element signature="e#1374#1740#0" expanded="false" />
             <element signature="e#1393#1726#0" expanded="false" />
             <element signature="e#1482#1679#0" expanded="false" />
-            <element signature="e#4559#4897#0" expanded="false" />
-            <element signature="e#4648#4854#0" expanded="false" />
+            <element signature="e#4562#4900#0" expanded="false" />
+            <element signature="e#4651#4857#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -715,8 +714,8 @@
             <element signature="e#1374#1740#0" expanded="false" />
             <element signature="e#1393#1726#0" expanded="false" />
             <element signature="e#1482#1679#0" expanded="false" />
-            <element signature="e#4559#4897#0" expanded="false" />
-            <element signature="e#4648#4854#0" expanded="false" />
+            <element signature="e#4562#4900#0" expanded="false" />
+            <element signature="e#4651#4857#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -777,8 +776,8 @@
             <element signature="e#1374#1740#0" expanded="false" />
             <element signature="e#1393#1726#0" expanded="false" />
             <element signature="e#1482#1679#0" expanded="false" />
-            <element signature="e#4559#4897#0" expanded="false" />
-            <element signature="e#4648#4854#0" expanded="false" />
+            <element signature="e#4562#4900#0" expanded="false" />
+            <element signature="e#4651#4857#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -915,43 +914,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/shop/index.hbs">
+    <entry file="file://$PROJECT_DIR$/views/layouts/layout.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        <state relative-caret-position="147">
+          <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/views/shop/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="80" column="4" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
-          <folding>
-            <element signature="e#1009#1036#0" expanded="false" />
-            <element signature="e#1143#1255#0" expanded="false" />
-            <element signature="e#1374#1740#0" expanded="false" />
-            <element signature="e#1393#1726#0" expanded="false" />
-            <element signature="e#1482#1679#0" expanded="false" />
-            <element signature="e#4559#4897#0" expanded="false" />
-            <element signature="e#4648#4854#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/layout.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="126">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/header.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="36" column="92" lean-forward="false" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="92" />
+        <state relative-caret-position="290">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+          <folding>
+            <element signature="e#1009#1036#0" expanded="false" />
+            <element signature="e#1143#1255#0" expanded="false" />
+            <element signature="e#1374#1740#0" expanded="false" />
+            <element signature="e#1393#1726#0" expanded="false" />
+            <element signature="e#1482#1679#0" expanded="false" />
+            <element signature="e#4562#4900#0" expanded="false" />
+            <element signature="e#4651#4857#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

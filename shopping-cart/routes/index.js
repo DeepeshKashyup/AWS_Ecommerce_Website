@@ -72,10 +72,10 @@ router.get('/', function(req, res, next) {
 
 /* ES Changes */
 //^search?q=:query
-router.post('/search',function(request,response,next){
+router.get('/search',function(request,response,next){
     var pageNum = 1;
     var perPage = 9;
-    var userQuery = request.body.query;
+    var userQuery = request.param('query');
     console.log(userQuery);
     //var userId = request.session.userId;
     console.log(request);
