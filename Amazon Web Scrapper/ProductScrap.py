@@ -9,8 +9,7 @@ connection = pymongo.MongoClient("mongodb://localhost:27017/");
 
 db = connection.Shopping
 p = db.products
-
-
+count = p.count()
 ##doc = p.find_one({'ASIN':'B00NQGP42Y'});
 ##print doc
 
@@ -22,17 +21,20 @@ def fieldValidation(field):
     return value
 
 def getProductBySearchKey(search):
+    global count
+    #count = count + 1
+    #print count
     search = search
     productDict = amazon.getProductURLArray(search)
     valid = 200
     reviewData = {}
-    count = 0
+    #count = 0
     #reviewData['categories'] = search
     for productAsin in productDict:
         
         print "Doc Count :",count+1
         #fetch iframeURL and fetch all review page url
-        count += 1
+        #count += 1
         print("PRODUCT[ASIN]: " + productAsin)
         #print type(productAsin)
         doc = p.find_one({'ASIN':str(productAsin)});
@@ -89,7 +91,9 @@ def getProductBySearchKey(search):
                     td = row.xpath(".//td/text()")[0].strip()
                 rowdetails[th.replace(' ','')] = td
         #print rowdetails
-        p_id = p.insert(rowdetails)
+        count += 1
+        rowdetails['_id'] = count
+        p_id = p.insert(rowdetails,count)
         print p_id
         #reviewData[productAsin].append(rowdetails)
             #print(reviewData[productAsin])
