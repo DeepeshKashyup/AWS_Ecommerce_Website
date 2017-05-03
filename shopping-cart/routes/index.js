@@ -14,13 +14,6 @@ var elasticsearch = require('elasticsearch');
 });
 */
 
-var client = new elasticsearch.Client({
-    accessKeyId: 'AKIAJMT2V7DRJNTLBB3A',
-    secretAccessKey: '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',
-    service: 'es',
-    region: 'us-west-2',
-    host: 'search-shopping-6r2azz6jp5nou4futskmr6rysq.us-west-2.es.amazonaws.com'
-});
 
 client.ping({
     // ping usually has a 3000ms timeout
