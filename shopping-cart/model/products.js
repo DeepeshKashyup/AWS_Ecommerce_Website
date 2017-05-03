@@ -7,6 +7,7 @@ var mongoosePaginate = require('mongoose-paginate');
 var Schema = mongoose.Schema;
 
 var schema = new Schema({
+    ASIN : {type : String,required:true},
     imgPath : {type : String,required:true},
     description:{type : String,required:true},
     title : {type : String,required:true},

@@ -1,25 +1,13 @@
-/**
- * Created by deepe on 5/3/2017.
- */
 var express = require('express');
 var router = express.Router();
 var Product = require('../model/products');
 /* Elastic Search changes*/
+
 var elasticsearch = require('elasticsearch');
-//var elasticsearch = require('aws-es');
-//var elasticsearch = require('elasticsearch');
-/*var client = new elasticsearch.Client({
-    host: 'localhost:9200',
-    log: 'trace'
-});
-*/
 
 var client = new elasticsearch.Client({
-    accessKeyId: 'AKIAJMT2V7DRJNTLBB3A',
-    secretAccessKey: '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',
-    service: 'es',
-    region: 'us-west-2',
-    host: 'search-shopping-6r2azz6jp5nou4futskmr6rysq.us-west-2.es.amazonaws.com'
+    host: 'localhost:9200',
+    log: 'trace'
 });
 
 client.ping({
@@ -33,6 +21,27 @@ client.ping({
     }
 });
 
+/*
+ client.search({
+ index: 'shopping',
+ type: 'products',
+ body: {
+ query: {
+ match: {
+ title: "Apple"
+ }
+ }
+ }
+ }).then(function (resp) {
+ // console.log(resp)
+ var hits = resp.hits.hits;
+ console.log(hits)
+ }, function (err) {
+ console.trace(err.message);
+ });*/
+
+
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     Product.paginate({}, { page: 1, limit: 9 },function(err,result){
@@ -41,7 +50,7 @@ router.get('/', function(req, res, next) {
         var chunkSize =3;
         //console.log(docs.length);
         //console.log(req);
-        //console.log(req.path);
+        console.log(req.path);
         for(var i=0;i<docs.length;i+=chunkSize){
             productChunks.push(docs.slice(i,i+chunkSize));
             //console.log(productChunks);
@@ -50,10 +59,12 @@ router.get('/', function(req, res, next) {
             , products:productChunks
             , helpers: { foo : function (){
                 var ret="";
+
                 for(var i=1, j=result.total%9; i<=j; i++) {
                     ret = ret +"<li class=\"page-item\"><a class=\"page-link\" href=\"/1\">"+i+"</a></li>";
                     //+ "<li>" + options.fn(context[i]) + "</li>"
                 }
+
                 return ret;
             }
             }
@@ -69,7 +80,7 @@ router.get('/search',function(request,response,next){
     var userQuery = request.param('query');
     console.log(userQuery);
     //var userId = request.session.userId;
-    //console.log(request);
+    console.log(request);
     var searchParams = {
         index: 'shopping',
         from: (pageNum - 1) * perPage,
@@ -78,19 +89,10 @@ router.get('/search',function(request,response,next){
         body: {
             query: {
 
-                /*match: {
+                match: {
                     // match the query against all of
                     // the fields in the posts index
                     title: userQuery
-                }*/
-
-                multi_match: {
-                    // match the query against all of
-                    // the fields in the posts index
-                    // title: "menn"
-                    fields:  [ "description", "title" ],
-                    query:     userQuery,
-                    fuzziness: "AUTO"
                 }
 
 
@@ -98,27 +100,24 @@ router.get('/search',function(request,response,next){
         }
     };
 
-
     client.search(searchParams, function (err, res) {
         if (err) {
             // handle error
             throw err;
         }
-        //console.log(res);
         var results = res.hits.hits.map(function(i){
             return i['_source'];
         });
         /*var results = res['hits']['hits'].map(function(i){
          return i['_source'];
          });*/
-        //console.log(results);
+        console.log(results);
         //var docs = res.hits.hits._source;
         //console.log(docs);
         var productChunks = [];
         var chunkSize = 3;
         for(var i = 0;i<results.length;i+=chunkSize){
             productChunks.push(results.slice(i,i+chunkSize));
-
             console.log(productChunks);
         }
         response.render('shop/index', {
@@ -142,7 +141,7 @@ router.get('^/[aA-zZ]+&?[aA-zZ]*/:page', function(req, res, next) {
         var productChunks = [];
         var chunkSize =3;
         //console.log(docs);
-        //console.log(typeof(result.docs));
+        console.log(typeof(result.docs));
         path = req.path.split("/")[1];
         current_page = parseInt(req.path.split("/")[2]);
         if(current_page==1)
