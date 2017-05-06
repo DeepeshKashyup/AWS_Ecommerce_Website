@@ -11,7 +11,13 @@ var schema = new Schema({
     imgPath : {type : String,required:true},
     description:{type : String,required:true},
     title : {type : String,required:true},
-    price :{type : String,required:true}
+    ItemWeight :{type : String,required:true},
+    price :{type : String,required:true},
+    ShippingWeight:{type : String,required:true},
+    CustomerReviews :{type : String,required:true},
+    ProductDimensions:{type : String,required:true},
+    Itemmodelnumber: {type : String,required:true},
+    categories: {type : String,required:true}
 });
 
 //pagination

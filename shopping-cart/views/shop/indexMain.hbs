@@ -1,0 +1,183 @@
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-9">
+                <h3>
+                    TOP ELECTRONICS PRODUCT</h3>
+            </div>
+            <div class="col-md-3">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
+                       data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                                                data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        {{#each c1}}
+                            {{#each this}}
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <a href="/loadProduct?ASIN={{this.ASIN}}">
+                                            <img src="{{ this.imgPath}}" class="img-responsive" style="width: 350px; height: 260px" title ='{{this.title}}' alt="a" />
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                    {{#each c2}}
+                        {{#each this}}
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <a href="/loadProduct?ASIN={{this.ASIN}}">
+                                        <img src="{{ this.imgPath}}" class="img-responsive" style="width: 350px; height: 260px" title ='{{this.title}}' alt="a" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    {{/each}}
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-9">
+                <h3>
+                    TOP ELECTRONICS PRODUCT</h3>
+            </div>
+            <div class="col-md-3">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example2"
+                       data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example2"
+                                                data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <div id="carousel-example2" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        {{#each t1}}
+                            {{#each this}}
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <a href="/loadProduct?ASIN={{this.ASIN}}">
+                                                <img src="{{ this.imgPath}}" class="img-responsive" style="width: 350px; height: 260px" title ='{{this.title}}' alt="a" />
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        {{#each t2}}
+                            {{#each this}}
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <a href="/loadProduct?ASIN={{this.ASIN}}">
+                                                <img src="{{ this.imgPath}}" class="img-responsive" style="width: 350px; height: 260px" title ='{{this.title}}' alt="a" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-9">
+                <h3>
+                    TOP ELECTRONICS PRODUCT</h3>
+            </div>
+            <div class="col-md-3">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example3"
+                       data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example3"
+                                                data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <div id="carousel-example3" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        {{#each m1}}
+                            {{#each this}}
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <a href="/loadProduct?ASIN={{this.ASIN}}">
+                                                <img src="{{ this.imgPath}}" class="img-responsive" style="width: 350px; height: 260px" title ='{{this.title}}' alt="a" />
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        {{#each m2}}
+                            {{#each this}}
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <a href="/loadProduct?ASIN={{this.ASIN}}">
+                                                <img src="{{ this.imgPath}}" class="img-responsive" style="width: 350px; height: 260px" title ='{{this.title}}' alt="a" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

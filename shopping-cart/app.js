@@ -12,7 +12,7 @@ var app = express();
 
 // mongoose connection
 
-mongoose.connect('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxx:27017/shopping');
+mongoose.connect('zzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:27017/shopping');
 //mongoose.connect('localhost:27017/Shopping');
 // view engine setup
 app.engine('.hbs',expressHbs({defaultLayout : 'layout',extname :'.hbs'}));
