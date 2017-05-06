@@ -5,7 +5,7 @@ import json
 import pandas
 import pymongo
 
-connection = pymongo.MongoClient("mongodb://localhost:27017/");
+connection = pymongo.MongoClient("mongodb://ec2-35-167-37-100.us-west-2.compute.amazonaws.com:27017/");
 
 db = connection.Shopping
 p = db.products
