@@ -9,11 +9,11 @@ var index = require('./routes/index');
 //var users = require('./routes/users');
 var mongoose = require('mongoose');
 var app = express();
-
+var session = require('express-session');
 // mongoose connection
 
-mongoose.connect('zzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:27017/shopping');
-//mongoose.connect('localhost:27017/Shopping');
+//mongoose.connect('zzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:27017/shopping');
+mongoose.connect('localhost:27017/Shopping');
 // view engine setup
 app.engine('.hbs',expressHbs({defaultLayout : 'layout',extname :'.hbs'}));
 app.set('view engine', '.hbs');
@@ -24,6 +24,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(session({secret:'mysupersecret',resave:false,saveUninitialized:false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);

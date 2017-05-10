@@ -6,12 +6,10 @@ var router = express.Router();
 var Product = require('../model/products');
 /* Elastic Search changes*/
 var elasticsearch = require('elasticsearch');
-//var elasticsearch = require('aws-es');
-
 // redis
 var redis = require('redis');
-var redisclient = redis.createClient(6379,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-
+//var redisclient = redis.createClient(6379,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+var redisclient = redis.createClient();
 redisclient.auth('password', function (err) {
     if (err) throw err;
 });
@@ -21,14 +19,20 @@ redisclient.on('connect', function() {
 });
 
 // redis
-//var client = new elasticsearch.Client({});
-var client = new elasticsearch.Client({
+var client = new elasticsearch.Client({});
+/*var client = new elasticsearch.Client({
     accessKeyId: 'xxxxxxxxxxxxxxxxxxxx',
     secretAccessKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
     service: 'es',
     region: 'us-west-2',
     host: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-});
+});*/
+
+//csrf protection
+
+var csrf = require('csurf');
+var csrfprotection = csrf();
+router.use(csrfprotection);
 
 client.ping({
     // ping usually has a 3000ms timeout
@@ -39,6 +43,17 @@ client.ping({
     } else {
         console.log('All is well');
     }
+});
+
+
+/* Sign up Page */
+
+router.get('/user/signup',function(req,res,next){
+    res.render('user/signup',{csrfToken:req.csrfToken()})
+});
+
+router.post('/user/signup',function(req,res,next){
+    res.redirect("/");
 });
 
 /* GET home page. */
