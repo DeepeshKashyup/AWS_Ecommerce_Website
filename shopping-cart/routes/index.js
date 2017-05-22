@@ -4,12 +4,15 @@
 var express = require('express');
 var router = express.Router();
 var Product = require('../model/products');
+var config = require('../config')
 /* Elastic Search changes*/
 var elasticsearch = require('elasticsearch');
 // redis
 var redis = require('redis');
-//var redisclient = redis.createClient(6379,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-var redisclient = redis.createClient();
+
+var redisclient = redis.createClient(config.redis.PORT, config.redis.HOST);
+
+//var redisclient = redis.createClient();
 redisclient.auth('password', function (err) {
     if (err) throw err;
 });
@@ -19,14 +22,19 @@ redisclient.on('connect', function() {
 });
 
 // redis
-var client = new elasticsearch.Client({});
-/*var client = new elasticsearch.Client({
-    accessKeyId: 'xxxxxxxxxxxxxxxxxxxx',
-    secretAccessKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-    service: 'es',
-    region: 'us-west-2',
-    host: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-});*/
+var client;
+if (config.elasticsearch.HOST == "localhost") {
+    client = new elasticsearch.Client({});
+}
+else {
+    client = new elasticsearch.Client({
+        accessKeyId: config.elasticsearch.ACCESSKEYID,
+        secretAccessKey: config.elasticsearch.SECRETACCESSKEY,
+        service: config.elasticsearch.SERVICE,
+        region: config.elasticsearch.REGION,
+        host: config.elasticsearch.HOST
+    });
+}
 
 //csrf protection
 

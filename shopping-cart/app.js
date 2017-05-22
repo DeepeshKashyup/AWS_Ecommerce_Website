@@ -10,10 +10,12 @@ var index = require('./routes/index');
 var mongoose = require('mongoose');
 var app = express();
 var session = require('express-session');
+var config = require('./config')
 // mongoose connection
 
-//mongoose.connect('zzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:27017/shopping');
-mongoose.connect('localhost:27017/Shopping');
+
+mongoose.connect(config.mongo.HOST);
+
 // view engine setup
 app.engine('.hbs',expressHbs({defaultLayout : 'layout',extname :'.hbs'}));
 app.set('view engine', '.hbs');
