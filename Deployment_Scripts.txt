@@ -1,4 +1,4 @@
-
+﻿
 1) Make an account on Amazon Web Services
 http://aws.amazon.com/
 
@@ -78,3 +78,7 @@ console.log('Listening on port', port);
 14) Reroute IP Tables so that javascript file also displays on port 80
 
 sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 9000
+
+
+
+15) pm2 start npm -- start

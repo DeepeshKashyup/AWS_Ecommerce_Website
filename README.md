@@ -1,6 +1,8 @@
 # Best Stores - Ecommerce Website
 
-This project is part of Big Data course work 
+This is a personal project and part of learning Big Data Techonologies. Here I have attempted to play with Amazon Web Services and NodeJS Application Development.
+
+Project Description
 
 - Developed a Webscrapper in Python to fetch Product information from Amazon.com and store it in MongoDB 
 - Implementing a Product Recommendation Engine using Collaborative Filtering in SPARK – Scala on AWS EMR Cluster.

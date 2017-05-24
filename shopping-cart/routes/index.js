@@ -107,7 +107,7 @@ router.get('/', function(req, res, next) {
                     //console.log(productChunks);
                 }
                 res.render('shop/indexMain', { title: 'Best Stores'
-                    , c1:c1,c2:c2,t1:t1,t2:t2,m1:m1,m2:m2});
+                    , c1: c1, c2: c2, t1: t1, t2: t2, m1: m1, m2: m2, csrfToken: req.csrfToken()});
 
                 //redisclient.quit();
             });

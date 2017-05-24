@@ -6,4 +6,4 @@ sudo chmod 777 data/db
 
 3) mongod
 
-4) mongoimport --db Shopping --collection products  data.json
+4) mongoimport --db Shopping --collection products --file data3.json

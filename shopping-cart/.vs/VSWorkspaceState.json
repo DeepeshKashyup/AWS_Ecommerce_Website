@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\bin",
+    "\\model",
     "\\routes"
   ],
+  "SelectedNode": "\\config.js",
   "PreviewInSolutionExplorer": false
 }
