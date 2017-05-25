@@ -3,6 +3,7 @@
  */
 var express = require('express');
 var router = express.Router();
+var passport = require('passport');
 var Product = require('../model/products');
 var config = require('../config')
 /* Elastic Search changes*/
@@ -60,9 +61,11 @@ router.get('/user/signup',function(req,res,next){
     res.render('user/signup',{csrfToken:req.csrfToken()})
 });
 
-router.post('/user/signup',function(req,res,next){
-    res.redirect("/");
-});
+router.post('/user/signup', passport.authenticate('local.signup', {
+    successRedirect: '/',
+    failureRedirect: '/user/signup',
+    failureFlash:true
+}));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

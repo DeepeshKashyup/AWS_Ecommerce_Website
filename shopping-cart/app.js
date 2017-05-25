@@ -10,12 +10,12 @@ var index = require('./routes/index');
 var mongoose = require('mongoose');
 var app = express();
 var session = require('express-session');
+var flash = require('connect-flash')
+var passport = require('passport')
 var config = require('./config')
 // mongoose connection
-
-
 mongoose.connect(config.mongo.HOST);
-
+require('./config/passport');
 // view engine setup
 app.engine('.hbs',expressHbs({defaultLayout : 'layout',extname :'.hbs'}));
 app.set('view engine', '.hbs');
@@ -26,7 +26,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(session({secret:'mysupersecret',resave:false,saveUninitialized:false}));
+app.use(session({ secret: 'mysupersecret', resave: false, saveUninitialized: false }));
+app.use(flash())
+app.use(passport.initialize())
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
