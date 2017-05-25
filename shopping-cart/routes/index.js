@@ -67,6 +67,10 @@ router.post('/user/signup', passport.authenticate('local.signup', {
     failureFlash:true
 }));
 
+router.get('/profile', function(req, res, next) {
+    res.render('user/profile');
+});
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
 

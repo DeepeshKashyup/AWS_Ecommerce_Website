@@ -10,7 +10,7 @@ var userSchema = new Schema({
 //handler method for encrypting password
 
 userSchema.methods.encryptPassword = function (password) {
-    return bcrypt.hashSync(password, bcrypt.genSalt(5), null);
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(5), null);
 };
 
 //handler method for password validation

@@ -15,7 +15,7 @@ var passport = require('passport')
 var config = require('./config')
 // mongoose connection
 mongoose.connect(config.mongo.HOST);
-require('./config/passport');
+require('./login-config/passport');
 // view engine setup
 app.engine('.hbs',expressHbs({defaultLayout : 'layout',extname :'.hbs'}));
 app.set('view engine', '.hbs');
