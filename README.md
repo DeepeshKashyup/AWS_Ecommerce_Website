@@ -1,7 +1,7 @@
 # Best Stores - Ecommerce Website
 
 This is a personal project and part of learning Big Data Techonologies. Here I have attempted to play with Amazon Web Services and NodeJS Application Development.
-Try out the application [here] (http://ec2-34-211-135-112.us-west-2.compute.amazonaws.com:3000/)
+Try out the application [here](http://ec2-34-211-135-112.us-west-2.compute.amazonaws.com:3000/)
 
 Project Description
 
