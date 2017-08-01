@@ -3,8 +3,12 @@
     "",
     "\\bin",
     "\\model",
-    "\\routes"
+    "\\public",
+    "\\public\\stylesheets",
+    "\\routes",
+    "\\views",
+    "\\views\\partials"
   ],
-  "SelectedNode": "\\config.js",
+  "SelectedNode": "\\public\\stylesheets\\login-style.css",
   "PreviewInSolutionExplorer": false
 }
